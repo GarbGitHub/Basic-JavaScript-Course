@@ -32,23 +32,19 @@ arg2 – значения аргументов, operation – строка с н
     function mathOperation(arg1, arg2, operation) {
         switch (operation) {
             case "summation":
-                console.log(summation(arg1, arg2));
-                break;
+                return summation(arg1, arg2);
             case "subtraction":
-                console.log(subtraction(arg1, arg2));
-                break;
+                return subtraction(arg1, arg2);
             case "multiplication":
-                console.log(multiplication(arg1, arg2));
-                break;
+                return multiplication(arg1, arg2);
             case "division":
-                console.log(division(arg1, arg2));
-                break;
+                return  division(arg1, arg2);
         }
     }
-    mathOperation(2, 5, 'summation');
-    mathOperation(10, 5, 'subtraction');
-    mathOperation(2, 5, 'multiplication');
-    mathOperation(6, 2, 'division');
+    console.log(mathOperation(2, 5, 'summation'));
+    console.log(mathOperation(10, 5, 'subtraction'));
+    console.log(mathOperation(2, 5, 'multiplication'));
+    console.log(mathOperation(6, 2, 'division'));
 </script>
 </body>
 </html>
