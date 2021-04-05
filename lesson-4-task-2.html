@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson-4-task-2</title>
+</head>
+<body>
+<script>
+
+    const basket  = {
+        products: [
+            ['яблоки', 80, 2.2], // наименование, стоимость за единицу, количество
+            ['груши', 120, 1.5],
+            ['молоко', 75, 2.0],
+        ],
+        calcTotalPrice: function () {
+            let totalCost = 0;
+            for (let product of this.products) {
+                totalCost += product[1] * product[2];
+            }
+            return totalCost
+        }
+    }
+    console.log(basket.calcTotalPrice())
+
+</script>
+</body>
+</html>
