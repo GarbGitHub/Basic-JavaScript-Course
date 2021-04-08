@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS /Lesson-1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <style>
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    p {
+      max-width: 1000px;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <p>№1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по
+      Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc –
+      температура по Цельсию</p>
+  </div>
+  <form class="row-form">
+    <div class="form-group mt-2 col-12 col-md-6 offset-md-3">
+      <label for="degreesCelsius">Градусы по цельсию</label>
+      <input type="number" class="form-control" id="degreesCelsius" name="degreesCelsius" placeholder="Введите цифры">
+      <a href="#" class="btn btn-primary mt-2" onclick="convert();">По Фаренгейту</a>
+    </div>
+    <h3 id="result" align="center"></h3>
+  </form>
+  <hr>
+  <div class="content">
+    <p>№2. Работа с переменными. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать
+      значение из name в admin. Вывести admin (должно вывести «Василий»).</p>
+    <button class="btn btn-primary mt-2" onclick="copyName();">Click My!</button>
+  </div>
+  <hr>
+  <div class="content">
+    <p>№3. *Чему будет равно JS-выражение 1000 + "108"</p>
+    <button class="btn btn-primary mt-2" onclick="addition();">Узнать</button>
+  </div>
+
+
+
+  <script src="lesson-1.js"></script>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
