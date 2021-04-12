@@ -16,14 +16,14 @@
 
     /* 1. Решение записывает в объект свойства ДАДЖЕ с нулевыми значениями: > 9 > {единицы: 9, десятки: 0, сотни: 0} */
 
-    function number_into_object(n){
+    function number_into_object(n) {
         let obj = {};
         if (n >= 0 && n <= 999) {
             obj['единицы'] = n % 10;
             obj['десятки'] = Math.floor(n / 10) % 10;
             obj['сотни'] = Math.floor(n / 100) % 10;
             return obj
-        }else{
+        } else {
             console.log('Число должен быть в диапазоне от 0 до 999.');
             return obj;
         }
@@ -32,9 +32,11 @@
     /* 2. Решение записывает в объект только свойства с НЕ нулевыми значениями: > 9 > {единицы: 9} */
 
     // function number_into_object(n) {
-    //     console.log('Число должен быть в диапазоне от 0 до 999.');
     //     const obj = {};
-    //     if (n > 999) return obj;
+    //     if (n > 999) {
+    //         console.log('Число должен быть в диапазоне от 0 до 999.');
+    //         return obj;
+    //     }
     //     const arrKeys = ['единицы', 'десятки', 'сотни'];
     //     const str = String(n);
     //     let j = 0;
